@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/top_lvl_layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#ffffffff"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<ImageView
+android:id="@+id/background_image"
+android:layout_width="fill_parent"
+android:layout_x="0px"
+android:layout_y="0px"
+android:background="@drawable/backend" android:adjustViewBounds="true" android:baselineAlignBottom="false" android:scrollbarAlwaysDrawVerticalTrack="false" android:layout_height="wrap_content">
+</ImageView>
+<TextView
+android:id="@+id/lbl_my_number"
+android:layout_width="83px"
+android:layout_height="20px"
+android:text="My Number :"
+android:layout_x="9px" android:layout_y="120px">
+</TextView>
+<TextView
+android:id="@+id/txt_my_number"
+android:layout_width="212px"
+android:layout_height="wrap_content"
+android:text="-my-number-"
+android:layout_x="100px" android:layout_y="120px">
+</TextView>
+<AutoCompleteTextView
+android:id="@+id/txt_callee"
+android:layout_width="304px"
+android:text="Called Party Address"
+android:layout_x="9px" android:layout_y="58px" android:layout_height="wrap_content">
+</AutoCompleteTextView>
+<ImageButton
+android:id="@+id/img_button_call"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="80px" android:layout_y="202px">
+</ImageButton>
+<ImageButton
+android:id="@+id/img_button_discon"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="160px" android:layout_y="202px">
+</ImageButton>
+</AbsoluteLayout>

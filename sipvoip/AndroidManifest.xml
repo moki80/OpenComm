@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.hsc.sip.ua">
+    <application android:icon="@drawable/icon64">
+        <activity android:name=".core.ui.Sipdroid" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           <intent-filter>
+            <action android:name="android.intent.action.DIAL" /> 
+            <category android:name="android.intent.category.DEFAULT" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".config.ui.UserInfo" android:label="User Information : Configuration">
+        </activity>
+        <activity android:name=".config.ui.UserProfile" android:label="User Profile : Configuration">
+        </activity>
+        <activity android:name=".config.ui.CallOptions" android:label="Call Options : Configuration">
+        </activity>
+        <activity android:name=".config.ui.ProxyRegistration" android:label="Proxy : Configuration">
+        </activity>
+    </application>
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest> 

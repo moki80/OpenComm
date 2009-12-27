@@ -1,0 +1,5 @@
+The Mjsip and IMS UA android port has been developed by Hughes Systique Corporation (www.hsc.com)
+and is based on the open source MJSIP stack (version 1.6)
+
+The changes have been made available under the terms of the GNU GPL License (http://www.gnu.org/) (General Public License) as
+published by the Free Software Foundation 
