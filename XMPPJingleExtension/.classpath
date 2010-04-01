@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/JAVA Workspace/smack_3_1_0/smack_3_1_0/smack.jar"/>
+	<classpathentry kind="lib" path="C:/JAVA Workspace/smack_3_1_0/smack_3_1_0/smackx.jar"/>
+	<classpathentry kind="lib" path="C:/JAVA Workspace/smack_3_1_0/smack_3_1_0/smackx-debug.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
