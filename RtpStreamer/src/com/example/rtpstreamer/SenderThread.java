@@ -8,21 +8,21 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetAddress;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.Random;
 
 import org.sipdroid.net.RtpPacket;
 import org.sipdroid.net.RtpSocket;
 import org.sipdroid.net.SipdroidSocket;
 
-import android.content.Context;
-import android.media.AudioFormat;
-import android.media.AudioManager;
-import android.media.AudioRecord;
-import android.media.MediaRecorder;
+//import android.content.Context;
+//import android.media.AudioFormat;
+//import android.media.AudioManager;
+//import android.media.AudioRecord;
+//import android.media.MediaRecorder;
 import android.os.Environment;
-import android.preference.PreferenceManager;
-import android.telephony.TelephonyManager;
+//import android.preference.PreferenceManager;
+//import android.telephony.TelephonyManager;
 
 public class SenderThread extends Thread {
 	/** Whether working in debug mode. */
@@ -56,24 +56,24 @@ public class SenderThread extends Thread {
 	boolean running = false;
 	boolean muted = false;
 	
-	private static HashMap<Character, Byte> rtpEventMap = new HashMap<Character,Byte>(){{
-		put('0',(byte)0);
-		put('1',(byte)1);
-		put('2',(byte)2);
-		put('3',(byte)3);
-		put('4',(byte)4);
-		put('5',(byte)5);
-		put('6',(byte)6);
-		put('7',(byte)7);
-		put('8',(byte)8);
-		put('9',(byte)9);
-		put('*',(byte)10);
-		put('#',(byte)11);
-		put('A',(byte)12);
-		put('B',(byte)13);
-		put('C',(byte)14);
-		put('D',(byte)15);
-	}};
+//	private static HashMap<Character, Byte> rtpEventMap = new HashMap<Character,Byte>(){{
+//		put('0',(byte)0);
+//		put('1',(byte)1);
+//		put('2',(byte)2);
+//		put('3',(byte)3);
+//		put('4',(byte)4);
+//		put('5',(byte)5);
+//		put('6',(byte)6);
+//		put('7',(byte)7);
+//		put('8',(byte)8);
+//		put('9',(byte)9);
+//		put('*',(byte)10);
+//		put('#',(byte)11);
+//		put('A',(byte)12);
+//		put('B',(byte)13);
+//		put('C',(byte)14);
+//		put('D',(byte)15);
+//	}};
 	
 	/**
 	 * Constructs a RtpStreamSender.
@@ -162,19 +162,20 @@ public class SenderThread extends Thread {
 		rtp_packet.setPayloadType(8);
 		int seqn = 0;
 		long time = 0;
-		double p = 0;
+//		double p = 0;
 		long frame_period = 1000 / frame_rate;
 		long last_tx_time = 0;
 		long next_tx_delay;
 		long now;
 		running = true;
 		m = 1;
-		int dtframesize = 4;
+//		int dtframesize = 4;
 
 		android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
 
-		short[] lin = new short[frame_size*11];
-		int num,ring = 0;
+//		short[] lin = new short[frame_size*11];
+//		int num = 0;
+		int ring = 0;
 		random = new Random();
 
         File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + filepath);

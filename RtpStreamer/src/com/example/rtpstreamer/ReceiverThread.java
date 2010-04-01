@@ -8,15 +8,15 @@ import org.sipdroid.net.RtpSocket;
 import org.sipdroid.net.SipdroidSocket;
 
 import android.content.ContentResolver;
-import android.content.Context;
-import android.content.SharedPreferences.Editor;
+//import android.content.Context;
+//import android.content.SharedPreferences.Editor;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.media.ToneGenerator;
-import android.os.PowerManager;
-import android.preference.PreferenceManager;
-import android.provider.Settings;
+//import android.os.PowerManager;
+//import android.preference.PreferenceManager;
+//import android.provider.Settings;
 
 /**
  * RtpStreamReceiver is a generic stream receiver. It receives packets from RTP
@@ -132,13 +132,13 @@ public class ReceiverThread extends Thread {
 				BUFFER_SIZE*2*2, AudioTrack.MODE_STREAM);
 		short lin[] = new short[BUFFER_SIZE];
 		short lin2[] = new short[BUFFER_SIZE];
-		int user, server, lserver, luser, cnt, todo, headroom, len = 0, seq = 0, cnt2 = 0, m = 1,
+		int user, server, lserver, /*luser,*/ cnt, todo, headroom, len = 0, seq = 0, cnt2 = 0, m = 1,
 			expseq, getseq, vm = 1, gap, gseq;
 		timeout = 1;
 		boolean islate;
 		user = 0;
 		lserver = 0;
-		luser = -8000;
+		//luser = -8000;
 		cnt = 0;
 		G711.init();
 		ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_MUSIC,(int)(ToneGenerator.MAX_VOLUME));

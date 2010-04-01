@@ -1,29 +1,29 @@
 package com.example.rtpstreamer;
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.InetAddress;
-
-import org.sipdroid.net.RtpPacket;
-import org.sipdroid.net.RtpSocket;
+//import java.io.BufferedInputStream;
+//import java.io.DataInputStream;
+//import java.io.File;
+//import java.io.FileInputStream;
+//import java.io.IOException;
+//import java.io.InputStream;
+//import java.net.InetAddress;
+//
+//import org.sipdroid.net.RtpPacket;
+//import org.sipdroid.net.RtpSocket;
 import org.sipdroid.net.SipdroidSocket;
 
 import android.app.Activity;
-import android.content.Context;
-import android.media.AudioFormat;
-import android.media.AudioManager;
-import android.media.AudioTrack;
-import android.media.MediaPlayer;
+//import android.content.Context;
+//import android.media.AudioFormat;
+//import android.media.AudioManager;
+//import android.media.AudioTrack;
+//import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Environment;
+//import android.os.Environment;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.rtpstreamer.G711;
+//import com.example.rtpstreamer.G711;
 
 public class RtpStreamer extends Activity {
     /** Called when the activity is first created. */
@@ -54,11 +54,10 @@ public class RtpStreamer extends Activity {
           boolean do_sync = true;
           
           //fun fact: 10.0.2.2 is the host's loopback, 127.0.0.1 is the emulator's
-          int sync_adj = 2; //ms
           
           SenderThread sender = new SenderThread(do_sync, frame_rate, frame_size, socket, "127.0.0.1", 6004);
           sender.setFilePath("/test2.wav");
-          SenderThread sender2 = new SenderThread(do_sync, frame_rate, frame_size, socket, "127.0.0.1", 6006);
+          SenderThread sender2 = new SenderThread(do_sync, frame_rate, frame_size, socket2, "127.0.0.1", 6006);
           sender2.setFilePath("/test3.wav");
           ReceiverThread receiver = new ReceiverThread(recv_socket);
 
