@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Room Name"
+			android:minWidth="70dp" />
+		<EditText android:id="@+id/room_name" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:textSize="16sp" android:autoText="false" android:minWidth="250dp"
+			android:capitalize="none" android:scrollHorizontally="true" />
+
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Nickname"
+			android:minWidth="70dp" />
+		<EditText android:id="@+id/nickname" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:textSize="16sp" android:autoText="false" android:minWidth="250dp"
+			android:capitalize="none" android:scrollHorizontally="true" />
+	</LinearLayout>
+	<Button android:id="@+id/create" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Create">
+		<requestFocus />
+	</Button>
+</LinearLayout>
+
