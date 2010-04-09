@@ -33,8 +33,8 @@ public class JingleIQPacket extends IQ {
 	
 	public JingleIQPacket(String from, String to, String action){
 
-		this.JIDfrom = from;
-		this.JIDto = to;
+		this.JIDfrom = from; // + "/Smack";
+		this.JIDto = to; // + "/Smack";
 		this.setaction(action);
 		//Description and Transport's xmlns is predefine at this stage;
 		this.description_xmlns = "\"urn:xmpp:jingle:apps:rtp:1\"";
@@ -43,6 +43,9 @@ public class JingleIQPacket extends IQ {
 		setType(IQ.Type.SET);
 		setFrom(JIDfrom);
 		setTo(JIDto);
+		
+		setinitiator(JIDfrom);
+		setresponder(JIDto);
 	}
 	
 	public void setaction(String action){

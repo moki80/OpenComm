@@ -14,6 +14,8 @@ import org.jivesoftware.smack.packet.IQ;
 import org.jivesoftware.smack.packet.Packet;
 import org.jivesoftware.smack.provider.ProviderManager;
 
+import android.util.Log;
+
 import com.cornell.opencomm.buddies.MUCBuddy;
 import com.cornell.opencomm.client.TestXMPPClient;
 import com.cornell.opencomm.client.XMPPClientSettings;
@@ -31,6 +33,8 @@ public class SessionHandler {
 			// set debugging enabled
 			XMPPConnection.DEBUG_ENABLED = true;
 
+			Log.i("TestXMPPClient", "Enabled Debug!");
+			
 			JingleIQProvider jingleiqprovider = new JingleIQProvider();
 			ProviderManager.getInstance().addIQProvider("jingle",
 					"urn:xmpp:jingle:1", jingleiqprovider);
@@ -38,9 +42,14 @@ public class SessionHandler {
 			// add packet listener for JingleIQPacket
 			connection.addPacketListener(new PacketListener() {
 				public void processPacket(Packet p) {
+					Log.i("TestXMPPClient", "Received a packet");
 					if (p instanceof JingleIQPacket) {
+						Log.i("TestXMPPClient", "Received a JingleIQ packet");
 						JingleIQPacket jiq = (JingleIQPacket) p;
+						Log.i("TestXMPPClient", "From: "  + jiq.getFrom()+ "To: " + jiq.getTo() + 
+								 "Initiator: " + jiq.getinitiator() + "Responder: " + jiq.getresponder());
 						MUCBuddy buddy = null;
+						Log.i("TestXMPPClient", "Looking for Buddy: " + jiq.getFrom());
 						if(!xmppClient.getOngoingChatBuddyList().containsKey(jiq.getFrom())){
 							buddy = new MUCBuddy(jiq.getFrom(), xmppClient.getConnection(), xmppClient.getLoggedInJID());
 							xmppClient.getOngoingChatBuddyList().put(jiq.getFrom(), buddy);
@@ -51,7 +60,9 @@ public class SessionHandler {
 						}
 						
 					} else if (p instanceof IQ) {
+						Log.i("TestXMPPClient", "Received an IQ packet");
 						IQ iq = (IQ) p;
+						Log.i("TestXMPPClient", "From: "  + iq.getFrom()+ "To: " + iq.getTo());
 						if(xmppClient.getOngoingChatBuddyList().containsKey(iq.getFrom())){
 							xmppClient.getOngoingChatBuddyList().get(iq.getFrom()).processPacket(iq);
 						}

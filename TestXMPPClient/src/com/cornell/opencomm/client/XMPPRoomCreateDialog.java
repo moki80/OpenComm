@@ -31,8 +31,8 @@ public class XMPPRoomCreateDialog extends Dialog implements OnClickListener {
     }
 
     public void onClick(View v) {
-        FQRoomName = getText(R.id.room_name) == null || getText(R.id.room_name).equals("") ? "CUTestRoom@conference.rebeldom" : getText(R.id.room_name);
-        String nickname = getText(R.id.nickname) == null || getText(R.id.nickname).equals("") ? "abhishek" : getText(R.id.nickname);
+        FQRoomName = getText(R.id.room_name) == null || getText(R.id.room_name).equals("") ? "CUTestRoom@conference.EUROMACH" : getText(R.id.room_name);
+        String nickname = getText(R.id.nickname) == null || getText(R.id.nickname).equals("") ? "curtis" : getText(R.id.nickname);
         
         MultiUserChat muc = new MultiUserChat(xmppClient.getConnection(), FQRoomName);
         // MultiUserChat muc = new MultiUserChat(xmppClient.getConnection(), room_name + "@talk.google.com");

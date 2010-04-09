@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.util.concurrent.BlockingQueue;
 
 import android.os.Environment;
+import android.util.Log;
 
 public class AudioPusher extends Thread{
 	
@@ -30,7 +31,7 @@ public class AudioPusher extends Thread{
 	}
 	
 	public void run() {
-		
+		Log.i("Audiopusher", "started");
 		int bigcounter = 0;
   		//read file into array
         File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + filepath);
@@ -66,6 +67,7 @@ public class AudioPusher extends Thread{
         G711.alaw2linear(music, decode, musicLength-12);
         running = true;
         short[] sample = new short [160];
+        Log.i("Audiopusher", "file read, streaming...");
         while (running) {
         	
         	try {

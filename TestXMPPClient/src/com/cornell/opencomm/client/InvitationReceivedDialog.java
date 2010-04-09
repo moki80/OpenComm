@@ -50,9 +50,8 @@ public class InvitationReceivedDialog extends Dialog {
     	this.room = room;       
         this.reason = reason;
         this.password = password;
-        
-        String[] tokens = inviter.split("/");
-        this.inviter = tokens[0];
+        this.inviter = inviter;
+        Log.i("TestXMPPClient", "Inviter in setReceivedParams is " + inviter);
     }
     
     protected void onStart() {
@@ -73,10 +72,14 @@ public class InvitationReceivedDialog extends Dialog {
 					muc.join(xmppClient.getConnection().getUser(), password);
 					
 					// Sleep for sometime .. 
-					Wait.waitforsec(5);
+					// Wait.waitforsec(5);
 					
 					// ArrayList<String> occupantsList = getMUCOccupants();
-					Iterator<String> occupants = getMUCOccupants();					
+					ArrayList<String> occupantsList = new ArrayList<String>();
+					occupantsList.add(inviter);
+					Iterator<String> occupants = occupantsList.iterator();
+					
+					// Iterator<String> occupants = getMUCOccupants();					
 					
 					// List<Affiliate> members = (ArrayList<Affiliate>)muc.getMembers();
 					// Iterator<String> occupants = muc.getOccupants();
@@ -84,21 +87,24 @@ public class InvitationReceivedDialog extends Dialog {
 					// Initiate Jingle session with all members of the chat room.
 					if(occupants == null || !occupants.hasNext()){
 						Log.i("TestXMPPClient", "MUC has no occupants!!");
-					} /*else {
+					} else {
 						while(occupants.hasNext()){
-							String occupant = StringUtils.parseBareAddress(occupants.next());
-							Log.i("TestXMPPClient", "Occupant name = " + occupant);
+							// String occupant = StringUtils.parseBareAddress(occupants.next());
+							String occupant = occupants.next();
+							// Log.i("TestXMPPClient", "Occupant name = " + occupant);
 							MUCBuddy buddy = null;
 							if(!xmppClient.getOngoingChatBuddyList().containsKey(occupant)){
 								buddy = new MUCBuddy(occupant, xmppClient.getConnection(), xmppClient.getLoggedInJID());
 								xmppClient.getOngoingChatBuddyList().put(occupant, buddy);
+								Log.i("TestXMPPClient", "Inserted buddy: " + occupant);
 								
 								// TODO: Trim inviter.
-								buddy.getJingleIQProcess().sessionInitiate(xmppClient.getLoggedInJID(), inviter);
+								Log.i("TestXMPPClient", "LoggedInJID is " + xmppClient.getLoggedInJID() + " Occupant is " + occupant);
+								buddy.getJingleIQProcess().sessionInitiate(xmppClient.getLoggedInJID(), occupant);
 								buddy.getSessionState().setinitiated();
 							}
 						}						
-					}*/
+					}
 					
 					/*
 					ArrayList<Affiliate> admins = new ArrayList<Affiliate>(muc.getAdmins());

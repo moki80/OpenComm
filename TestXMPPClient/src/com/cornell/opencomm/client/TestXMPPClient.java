@@ -154,6 +154,7 @@ public class TestXMPPClient extends Activity {
 						String inviter, String reason, String password,
 						Message message) {
 					invitationRecvdDialog.setReceivedParameters(room, inviter, reason, password);
+					Log.i("TestXMPPCLient", "Invite received from: " + inviter);
 					mHandler.post(new Runnable() {
 	                    public void run() {	                    	
 	                        invitationRecvdDialog.show();

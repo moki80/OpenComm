@@ -71,7 +71,7 @@ public class XMPPClientSettings extends Dialog implements android.view.View.OnCl
             connection.sendPacket(presence);
             
             xmppClient.setConnection(connection);            
-            xmppClient.setLoggedInJID(username + "@" + service);
+            xmppClient.setLoggedInJID(connection.getUser());
             
         } catch (XMPPException ex) {
             Log.e("TestXMPPClient", "[SettingsDialog] Failed to log in as " + username);

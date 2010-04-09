@@ -3,15 +3,18 @@ package com.cornell.opencomm.jingleimpl;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.packet.IQ;
 
+import android.util.Log;
+
 public class JingleIQProcess {
 	
 	private XMPPConnection connection;
 	//private static JingleIQPacket incomingIQ;
 
-	/*
+	
 	public JingleIQProcess(){
 	}
 	
+	/*
 	public JingleIQProcess(JingleIQPacket jiq) {
 		this.incomingIQ = jiq;
 	}
@@ -46,7 +49,10 @@ public class JingleIQProcess {
 		jp.addPayLoadType(p1);
 		jp.addPayLoadType(p2);
 		jp.addTransportCandidate(c1);
-			
+		
+		Log.i("TestXMPPClient", "In session initiate: " + "From: "  + jp.getFrom()+ "To: " + jp.getTo() + 
+				 "Initiator: " + jp.getinitiator() + "Responder: " + jp.getresponder());
+		
 		connection.sendPacket(jp);
 	}
 	
@@ -65,10 +71,12 @@ public class JingleIQProcess {
 	}
 	
 	// TODO: CURTIS: This is where you actually get the IP and send!
-	public void sessionAccept(JingleIQPacket incomingIQ) {
+	public void sessionAccept(JingleIQPacket incomingIQ, String initiator, String responder) {
 		
 		System.out.println("Now sending out accepting packat!");
 		JingleIQPacket jp = new JingleIQPacket(incomingIQ.getTo(), incomingIQ.getFrom(), "session-accept");
+		jp.setinitiator(initiator);
+		jp.setresponder(responder);
 		
 		//Adding content to the IQPacket
 		PayLoadType p1 = new PayLoadType();
@@ -91,6 +99,9 @@ public class JingleIQProcess {
 		jp.addPayLoadType(p1);
 		jp.addPayLoadType(p2);
 		jp.addTransportCandidate(c1);
+		
+		Log.i("TestXMPPClient", "In session accept: " + "From: "  + jp.getFrom()+ "To: " + jp.getTo() + 
+				 "Initiator: " + jp.getinitiator() + "Responder: " + jp.getresponder());
 		
 		connection.sendPacket(jp);		
 	}

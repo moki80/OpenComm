@@ -24,6 +24,7 @@ import org.sipdroid.net.SipdroidSocket;
 import android.os.Environment;
 //import android.preference.PreferenceManager;
 //import android.telephony.TelephonyManager;
+import android.util.Log;
 
 public class SenderThread extends Thread {
 	/** Whether working in debug mode. */
@@ -155,6 +156,7 @@ public class SenderThread extends Thread {
 	
 	/** Runs it in a new Thread. */
 	public void run() {
+		Log.i("SenderThread", "started");
 		if (rtp_socket == null)
 			return;
 		byte[] buffer = new byte[frame_size + 12];
@@ -180,6 +182,7 @@ public class SenderThread extends Thread {
         
         short[] sample = new short[frame_size];
 
+        Log.i("SenderThread", "ready to send");
 		while (running) {
 
 			 if (frame_size == 160) {

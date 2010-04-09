@@ -17,6 +17,7 @@ import android.media.ToneGenerator;
 //import android.os.PowerManager;
 //import android.preference.PreferenceManager;
 //import android.provider.Settings;
+import android.util.Log;
 
 /**
  * RtpStreamReceiver is a generic stream receiver. It receives packets from RTP
@@ -109,7 +110,7 @@ public class ReceiverThread extends Thread {
 	
 	/** Runs it in a new Thread. */
 	public void run() {
-		
+		Log.i("ReceiverThread", "started");
 		
 		if (rtp_socket == null) {
 			if (DEBUG)
@@ -145,6 +146,7 @@ public class ReceiverThread extends Thread {
 		track.play();
 		empty();
 		System.gc();
+		Log.i("ReceiverThread", "started");
 		while (running) {
 			try {
 				rtp_socket.receive(rtp_packet);
