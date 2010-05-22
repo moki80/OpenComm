@@ -1,0 +1,97 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (434C41535326494C453041525345520E4350500AB6), pid=4248, tid=4152
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x023e1c00):  JavaThread "Unknown thread" [_thread_in_vm, id=4152]
+
+Stack: [0x002e0000,0x00330000)
+[error occurred during error reporting, step 110, id 0xc00000fd]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [javaw.exe+0xc07c]
+C  [javaw.exe+0x7d35]
+C  [kernel32.dll+0x8e4a5]
+C  [ntdll.dll+0x7cfed]
+C  [ntdll.dll+0x7d1ff]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 0K [0x044d0000, 0x045d0000, 0x049b0000)
+  eden space 896K,   0% used [0x044d0000, 0x044d0000, 0x045b0000)
+  from space 64K,   0% used [0x045b0000, 0x045b0000, 0x045c0000)
+  to   space 64K,   0% used [0x045c0000, 0x045c0000, 0x045d0000)
+ tenured generation   total 4096K, used 0K [0x049b0000, 0x04db0000, 0x084d0000)
+   the space 4096K,   0% used [0x049b0000, 0x049b0000, 0x049b0200, 0x04db0000)
+ compacting perm gen  total 12288K, used 99K [0x084d0000, 0x090d0000, 0x0c4d0000)
+   the space 12288K,   0% used [0x084d0000, 0x084e8dc8, 0x084e8e00, 0x090d0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files (x86)\Java\jdk1.6.0\bin\javaw.exe
+0x77650000 - 0x777b0000 	C:\Windows\SysWOW64\ntdll.dll
+0x76940000 - 0x76a50000 	C:\Windows\syswow64\kernel32.dll
+0x76c40000 - 0x76d06000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76700000 - 0x767f0000 	C:\Windows\syswow64\RPCRT4.dll
+0x75630000 - 0x75690000 	C:\Windows\syswow64\Secur32.dll
+0x76dc0000 - 0x76e90000 	C:\Windows\syswow64\USER32.dll
+0x76bb0000 - 0x76c40000 	C:\Windows\syswow64\GDI32.dll
+0x75820000 - 0x75880000 	C:\Windows\system32\IMM32.DLL
+0x76a50000 - 0x76b18000 	C:\Windows\syswow64\MSCTF.dll
+0x76d10000 - 0x76dba000 	C:\Windows\syswow64\msvcrt.dll
+0x76690000 - 0x76699000 	C:\Windows\syswow64\LPK.DLL
+0x75880000 - 0x758fd000 	C:\Windows\syswow64\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\client\jvm.dll
+0x72a80000 - 0x72ab2000 	C:\Windows\system32\WINMM.dll
+0x77140000 - 0x77284000 	C:\Windows\syswow64\ole32.dll
+0x76840000 - 0x768cd000 	C:\Windows\syswow64\OLEAUT32.dll
+0x72a40000 - 0x72a79000 	C:\Windows\system32\OLEACC.dll
+0x73cc0000 - 0x73cec000 	C:\Windows\system32\apphelp.dll
+0x6d310000 - 0x6d318000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\hpi.dll
+0x772a0000 - 0x772a7000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files (x86)\Java\jdk1.6.0\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\Abhishek\Documents\Android\android-sdk-windows\platforms\android-2.1\android.jar
+java_command: com.cornell.opencomm.networking.IPAddresses
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.6.0
+PATH=C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin;C:\Program Files (x86)\Java\jdk1.6.0\bin;C:\Program Files (x86)\Java\jdk1.6.0;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\10.0\DLLShared\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Java\jdk1.6.0\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin\;C:\ant\bin;C:\Program Files (x86)\VisualSVN\bin;C:\Program Files (x86)\FastSum;C:\Windows\Microsoft.NET\Framework64\v3.5;C:\Program Files\Java\jre7;C:\Users\Abhishek\Documents\Android\android-sdk-windows\tools;C:\Program Files\TortoiseHg;C:\Program Files (x86)\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Tools\Sandcastle\ProductionTools\;C:\Windows\Microsoft.NET\Framework64\v3.5
+USERNAME=Abhishek
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6001 Service Pack 1
+
+CPU:total 2 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 4151240k(1797772k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-b105) for windows-x86, built on Nov 29 2006 00:48:48 by "java_re" with unknown MS VC++:1310
+
