@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Application Name: OpenComm UI First Draft
+	 Layout: buddy
+	 Created by: Risa Naka -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_blue"
+    >
+    <TextView
+    	android:id="@+id/title_buddy"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#398a96"
+    	android:gravity="center_horizontal"
+		android:textSize="22sp"
+		android:textColor="#fff"
+		android:text="Your Buddy List"
+    	/>
+	<GridView 
+	    android:id="@+id/buddygrid"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:columnWidth="120px"
+	    android:numColumns="auto_fit"
+	    android:verticalSpacing="10px"
+	    android:horizontalSpacing="10px"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	/>
+</LinearLayout>

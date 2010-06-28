@@ -1,0 +1,175 @@
+##########################################
+UI First Draft Notes
+##########################################
+
+Base Design: Original_Jason
+
+I. Login (0001)
+	a. Views (0001a)
+	b. Actions (0001b)
+
+II. BuddyList (0002)
+	a. Views (0002a)
+	b. Actions (0002b)
+
+##########################################
+##########################################
+
+I. Login (0001) 
+
+	Ia. Views (0001a)
+		logo_oc:
+			ImageView
+			logo_oc.png
+			300px x 300px
+			position:(50px, centerVertical)
+		
+		label_user:
+			TextView
+			"Username"
+			textSize: 18sp
+			textColor: #000
+			position: (450px, 50px)
+		
+		entry_user:
+			EditText
+			300px x 60px
+			textSize: 18sp
+			textColor: #000
+			position:
+				alignLeft: label_user
+				below: label_user
+		
+		label_pwd:
+			TextView
+			"Password"
+			textSize: 18sp
+			textColor: #000
+			position:
+				alignLeft: label_user
+				below: entry_user
+		
+		entry_pwd:
+			EditText
+			300px x 60px
+			textSize: 18sp
+			textColor: #000
+			position:
+				alignLeft: label_user
+				below: label_pwd
+		
+		remember:
+			CheckButton
+			"Remember Me"
+			textSize: 14sp
+			textColor: #000
+			position:
+				alignLeft: label_user
+				below: entry_pwd
+		
+		login:
+			Button
+			"Sign In"
+			textSize: 18sp
+			textColor: #000
+			position:
+				alignRight: entry_user
+				below: remember
+	
+	
+	Ib. Actions (0001b)
+		When we click login button:
+			- if either username or password is missing:
+				Toast: "Both username and password required"
+			
+			- if both username and password given
+				- if valid (valid username/pwd: opencomm/bailey2010)
+					- show buddylist
+				-if not valid
+					Toast: "Username and password not valid"
+			
+##########################################
+##########################################
+
+II. BuddyList:
+	:: show buddy list
+		choose meeting members
+		start meeting
+
+	IIa. Views
+		title_buddy:
+			TextView
+			"Your Buddy List"
+			fill_parent x wrap_content
+			textSize: 22sp
+			textColor: #fff
+			position: top of screen
+		
+		buddygrid:
+			GridView
+			fill_parent x fill_parent
+			center of screen
+			column width: 120px
+
+		**make Custom View using ToggleButton and ImageView
+			
+	IIb. Actions:
+		Click buddy image:
+		- Menu comes out:
+			- Name of username
+			- Add to meeting
+			- Start meeting
+		
+		Click buddy image again:
+		- Remove from meeting
+		
+		Click meeting button:
+		- Start multiperson meeting
+		
+		If meeting is already in session:
+		- Add to meeting
+		
+##########################################
+##########################################
+
+III. Multiperson Conference Room:
+	:: Show everyone's logo icon
+	:: Move to chat room by choosing icon
+	
+	IIIa. Views:
+		ImageView
+		90px x 90px
+		1 for each logo
+	
+	IIIb. Actions:
+		When a user is clicked:
+			- remove person from meeting
+			- engage in chat
+			
+		Ability to move between chat and buddylist
+			
+##########################################
+##########################################
+
+IV. Chat Space
+	:: Talk to 1+ person via chatbox
+	
+	IVa. Views:
+		box_chat:
+			EditText
+			fill_parent x 150px
+		
+		box_conv:
+			EditText
+			fill_parent x fill_parent
+		
+		box_user:
+			GridView
+				ImageView
+	
+	IVb. Actions:
+		Talk to each other
+		Option to move to buddy list/meeting page
+
+#####################
+#####################

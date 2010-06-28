@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Application Name: OpenComm UI First Draft
+	 Layout: main (login page)
+	 Created by: Risa Naka -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_blue"
+    >
+    <ImageView
+    	android:id="@+id/logo_oc"
+    	android:src="@drawable/logo_oc"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="50px"
+    	android:layout_height="300px"
+    	android:layout_width="300px" />
+
+   	<TextView
+   		android:id="@+id/label_user"
+   		android:layout_marginTop="50px"
+        android:layout_marginLeft="450px"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textSize="18sp"
+   		android:textColor="#000"
+   		android:text="Username" />
+    <EditText
+        android:id="@+id/entry_user"
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:layout_alignLeft="@id/label_user"
+        android:layout_below="@id/label_user"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="#000"
+    />
+    <TextView
+   		android:id="@+id/label_pwd"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_alignLeft="@id/label_user"
+   		android:layout_below="@id/entry_user"
+   		android:textSize="18sp"
+   		android:textColor="#000"
+   		android:text="Password" />
+    <EditText
+        android:id="@+id/entry_pwd"
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_pwd"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_alignLeft="@id/label_user"/>
+    <CheckBox
+    	android:id="@+id/remember"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+   		android:layout_below="@id/entry_pwd"
+   		android:layout_alignLeft="@id/label_user"
+   		android:textSize="14sp"
+    	android:textColor="#000"
+    	android:text="Remember Me" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/entry_user"
+        android:layout_below="@id/remember"
+        android:text="Sign In" />
+</RelativeLayout>
