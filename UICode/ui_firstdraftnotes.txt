@@ -2,6 +2,9 @@
 UI First Draft Notes
 ##########################################
 
+startActivityForResult() - use to open a new screen ?
+Common Tasks info: http://developer.android.com/guide/appendix/faq/commontasks.html#implementcallbacks
+
 Base Design: Original_Jason
 
 I. Login (0001)
@@ -12,6 +15,16 @@ II. BuddyList (0002)
 	a. Views (0002a)
 	b. Actions (0002b)
 
+III. Multiperson Conference Room (0003)
+	a. Views (0003a)
+	b. Actions (0003b)
+
+IV. Chat Space (0004)
+	a. Views (0004a)
+	b. Actions (0004b)
+	
+V. Activities (0005)
+	
 ##########################################
 ##########################################
 
@@ -78,6 +91,8 @@ I. Login (0001)
 	
 	
 	Ib. Actions (0001b)
+		FileReader/BufferedReader for remember mes?
+		
 		When we click login button:
 			- if either username or password is missing:
 				Toast: "Both username and password required"
@@ -91,12 +106,14 @@ I. Login (0001)
 ##########################################
 ##########################################
 
-II. BuddyList:
+II. BuddyList (0002)
 	:: show buddy list
 		choose meeting members
 		start meeting
+		
+	:: extend from ItemLIst (used to extend PluginList)
 
-	IIa. Views
+	IIa. Views (0002a)
 		title_buddy:
 			TextView
 			"Your Buddy List"
@@ -113,7 +130,7 @@ II. BuddyList:
 
 		**make Custom View using ToggleButton and ImageView
 			
-	IIb. Actions:
+	IIb. Actions (0002b)
 		Click buddy image:
 		- Menu comes out:
 			- Name of username
@@ -132,16 +149,16 @@ II. BuddyList:
 ##########################################
 ##########################################
 
-III. Multiperson Conference Room:
+III. Multiperson Conference Room (0003)
 	:: Show everyone's logo icon
 	:: Move to chat room by choosing icon
 	
-	IIIa. Views:
+	IIIa. Views (0003a)
 		ImageView
 		90px x 90px
 		1 for each logo
 	
-	IIIb. Actions:
+	IIIb. Actions (0003b)
 		When a user is clicked:
 			- remove person from meeting
 			- engage in chat
@@ -151,10 +168,10 @@ III. Multiperson Conference Room:
 ##########################################
 ##########################################
 
-IV. Chat Space
+IV. Chat Space (0004)
 	:: Talk to 1+ person via chatbox
 	
-	IVa. Views:
+	IVa. Views (0004a)
 		box_chat:
 			EditText
 			fill_parent x 150px
@@ -167,9 +184,9 @@ IV. Chat Space
 			GridView
 				ImageView
 	
-	IVb. Actions:
+	IVb. Actions (0004b)
 		Talk to each other
 		Option to move to buddy list/meeting page
 
-#####################
-#####################
+##########################################
+##########################################
