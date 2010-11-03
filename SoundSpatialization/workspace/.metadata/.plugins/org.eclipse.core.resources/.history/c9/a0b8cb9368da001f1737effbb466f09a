@@ -1,0 +1,9 @@
+package ss.cockatoo;
+
+public class DemoCockatoo {
+	
+	public byte[] removeHeader(File file) {
+		
+	}
+	InputStream is = new FileInputStream(file)
+}

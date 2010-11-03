@@ -1,0 +1,11 @@
+package ss.cockatoo;
+
+import java.io.*;
+
+public class DemoCockatoo {
+	
+	public byte[] removeHeader(File file) {
+		
+	}
+	InputStream is = new FileInputStream(file)
+}

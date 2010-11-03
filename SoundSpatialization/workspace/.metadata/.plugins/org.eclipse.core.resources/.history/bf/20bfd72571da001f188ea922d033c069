@@ -1,0 +1,49 @@
+package ss.cockatoo;
+
+import java.io.*;
+
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.os.Bundle;
+
+public class DemoCockatoo {
+	private byte[] music;
+	public void onCreate(Bundle savedInstanceState) {
+		int minSize = AudioTrack.getMinBufferSize(8000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+		AudioTrack track = new AudioTrack(AudioManager.STREAM_MUSIC, 8000, 
+				AudioFormat.CHANNEL_OUT_MONO,AudioFormat.ENCODING_PCM_16BIT, 
+				minSize, AudioTrack.MODE_STREAM);
+		track.write(music, 0, 80000);
+		track.play();
+	}
+	
+	/** = wav file converted into PCM data by removing the header */
+	public byte[] convertWAV(String fileName) {
+		// read file into array
+		File file = new File(fileName);
+		// get length of audio stored in file
+		int musicLength = (int)file.length();
+		music = new byte[musicLength - 44];
+		// Create a DataInputStream to read the audio data back from the saved file.
+		try {
+			InputStream is = new FileInputStream(file);
+			BufferedInputStream bis = new BufferedInputStream(is);
+			DataInputStream dis = new DataInputStream(bis);
+			// skip first 44 bytes
+			dis.skipBytes(44);
+			// Read the file into the music array.
+			int i = musicLength - 44;
+			while (i > 0) {
+				music[i] = dis.readByte();
+				i--;
+			}
+			// Close the input streams.
+			dis.close();    
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		return music;
+	} // end convertWav method
+} // end DemoCockatoo class

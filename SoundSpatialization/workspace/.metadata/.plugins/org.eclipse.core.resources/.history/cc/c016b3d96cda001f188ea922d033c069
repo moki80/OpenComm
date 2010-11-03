@@ -1,0 +1,16 @@
+package ss.cockatoo;
+
+import java.io.*;
+
+public class DemoCockatoo {
+	
+	// read file into array
+	File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/SSCockatoo/res/raw/test.wav");
+	
+	BufferedInputStream bis = new BufferedInputStream(new ByteArrayInputStream());
+	
+	/** Remove the header from wav file and convert to pcm data */
+	public byte[] removeHeader(File file) {
+	
+	}
+}

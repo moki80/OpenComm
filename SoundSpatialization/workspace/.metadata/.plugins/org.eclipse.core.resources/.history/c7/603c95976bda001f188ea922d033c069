@@ -1,0 +1,13 @@
+package ss.cockatoo;
+
+import java.io.*;
+
+public class DemoCockatoo {
+	
+	ByteArrayInputStream wavdata = new ByteArrayInputStream();
+	
+	/** Remove the header from wav file and convert to pcm data */
+	public byte[] removeHeader(File file) {
+	
+	}
+}

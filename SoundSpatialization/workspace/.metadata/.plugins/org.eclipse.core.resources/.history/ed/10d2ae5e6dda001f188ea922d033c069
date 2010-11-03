@@ -1,0 +1,38 @@
+package ss.cockatoo;
+
+import java.io.*;
+
+import android.os.*;
+
+public class DemoCockatoo {
+	
+	// read file into array
+	File file = new File("R.raw.test"));
+	// get length of audio stored in file
+	int musicLength = (int)file.length();
+	byte[] music = new byte[musicLength];
+	
+	// Create a DataInputStream to read the audio data back from the saved file.
+
+	try {
+		InputStream is = new FileInputStream(file);
+		BufferedInputStream bis = new BufferedInputStream(is);
+		DataInputStream dis = new DataInputStream(bis);
+		// Read the file into the music array.
+		int i = 0;
+		while (dis.available() > 0) {
+			music[i] = dis.readByte();
+			i++;
+		}
+
+		// Close the input streams.
+		dis.close();    
+	} catch (Exception e)
+	{
+		e.printStackTrace();
+	}
+	/** Remove the header from wav file and convert to pcm data */
+	public byte[] removeHeader(File file) {
+	
+	}
+}

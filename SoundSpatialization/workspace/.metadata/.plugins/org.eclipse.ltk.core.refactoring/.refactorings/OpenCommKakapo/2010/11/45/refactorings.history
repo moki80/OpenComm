@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 8 element(s) from project &apos;OpenCommKakapo&apos;&#x0D;&#x0A;- Original project: &apos;OpenCommKakapo&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     highc.raw&#x0D;&#x0A;     highe.raw&#x0D;&#x0A;     highestc.raw&#x0D;&#x0A;     highg.raw&#x0D;&#x0A;     lowc.raw&#x0D;&#x0A;     lowe.raw&#x0D;&#x0A;     lowestg.raw&#x0D;&#x0A;     lowg.raw" description="Delete elements" element1="res/raw/highestc.raw" element2="res/raw/highe.raw" element3="res/raw/lowg.raw" element4="res/raw/lowestg.raw" element5="res/raw/highg.raw" element6="res/raw/highc.raw" element7="res/raw/lowc.raw" element8="res/raw/lowe.raw" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="8" stamp="1288744625437" subPackages="false" version="1.0"/>
+</session>
