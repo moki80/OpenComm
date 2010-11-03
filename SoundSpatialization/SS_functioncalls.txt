@@ -1,0 +1,12 @@
+UI/Spatializer Interaction:
+When a new person is added to conference:
+	Initialize audio source with its initial position
+		AudioSS person1 = new AudioSS(px, py);
+			(px, pv) = added person’s coordinate
+			ITD and volume determined based on (px, py)
+
+When the person is moved within the space:
+	Update the ITD and Volume based on new position
+		person1.moveTo(nx, ny);
+			(nx, ny) = new position
+			ITD and volume determined based on new positions
