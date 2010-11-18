@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="28" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
 <window height="656" maximized="true" width="836" x="85" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="280" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="280" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="183" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -40,37 +40,29 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DemoKakapo.java" partName="DemoKakapo.java" path="C:/Documents and Settings/Risa/My Documents/Research/OpenComm/SoundSpatialization/workspace/OpenCommKakapo/src/ss/kakapo/DemoKakapo.java" title="DemoKakapo.java" tooltip="OpenCommKakapo/src/ss/kakapo/DemoKakapo.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DemoKakapo.java" partName="DemoKakapo.java" path="C:/Documents and Settings/Risa/My Documents/Research/OpenComm/SoundSpatialization/workspace/OpenCommKakapo/src/ss/kakapo/DemoKakapo.java" title="DemoKakapo.java" tooltip="OpenCommKakapo/src/ss/kakapo/DemoKakapo.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenCommKakapo/src/ss/kakapo/DemoKakapo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3298" selectionTopPixel="2499"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6366" selectionTopPixel="242"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioSS.java" partName="AudioSS.java" path="C:/Documents and Settings/Risa/My Documents/Research/OpenComm/SoundSpatialization/workspace/OpenCommKakapo/src/ss/kakapo/AudioSS.java" title="AudioSS.java" tooltip="OpenCommKakapo/src/ss/kakapo/AudioSS.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioSS.java" partName="AudioSS.java" path="C:/Documents and Settings/Risa/My Documents/Research/OpenComm/SoundSpatialization/workspace/OpenCommKakapo/src/ss/kakapo/AudioSS.java" title="AudioSS.java" tooltip="OpenCommKakapo/src/ss/kakapo/AudioSS.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenCommKakapo/src/ss/kakapo/AudioSS.java"/>
-<editorState selectionHorizontalPixel="16" selectionLength="0" selectionOffset="14328" selectionTopPixel="6919"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="924" selectionTopPixel="102"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="demomulti.xml" partName="demomulti.xml" path="C:/Documents and Settings/Risa/My Documents/Research/OpenComm/SoundSpatialization/workspace/OpenCommKakapo/res/layout/demomulti.xml" title="demomulti.xml" tooltip="OpenCommKakapo/res/layout/demomulti.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenCommKakapo/res/layout/demomulti.xml"/>
 </editor>
 </editors>
 <views>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
-<viewState/>
-</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -128,6 +120,13 @@
 </sorter>
 <filteredTreeFindHistory/>
 </viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
@@ -236,7 +235,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@161a21" ratio="0.5" ratioLeft="508" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c25a1d">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa4a2" ratio="0.5" ratioLeft="508" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c25a1d">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -380,15 +379,7 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommSS/src/ss/cockatoo/DemoCockatoo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommSS/src/ss/kakapo/AudioSS.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommSS/src/ss/kakapo/DemoKakapo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommSS/src/ss/cockatoo/AudioPlayFile.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/OpenCommSS/default.properties"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/OpenCommSS/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommSS/src/ss/kakapo/AudioSS.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/DemoKakapo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/AudioSS.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/OpenCommKakapo/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/OpenCommKakapo/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/DemoKakapo.java"/>
@@ -396,140 +387,143 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/OpenCommKakapo/res/layout/demomulti.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/AudioSS.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/OpenCommKakapo/res/layout/demomulti.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/AudioSS.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/OpenCommKakapo/res/layout/demomulti.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OpenCommKakapo/src/ss/kakapo/AudioSS.java"/>
 </editors>
-<item historyLabel="AudioSS.java" index="1">
-<position info="not_deleted" x="1040" y="0"/>
-</item>
-<item historyLabel="DemoCockatoo.java" index="0">
-<position info="not_deleted" x="1794" y="0"/>
-</item>
-<item historyLabel="AudioPlayFile.java" index="3">
+<item historyLabel="OpenCommKakapo Manifest" index="1"/>
+<item historyLabel="OpenCommSS Manifest" index="0"/>
+<item historyLabel="OpenCommKakapo Manifest" index="1"/>
+<item historyLabel="OpenCommKakapo Manifest" index="2"/>
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="2">
-<position info="not_deleted" x="20" y="0"/>
-</item>
-<item historyLabel="default.properties" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="OpenCommSS Manifest" index="5"/>
-<item historyLabel="AudioSS.java" index="6">
-<position info="not_deleted" x="1011" y="0"/>
-</item>
-<item historyLabel="DemoKakapo.java" index="2">
-<position info="not_deleted" x="22" y="6022"/>
-</item>
-<item historyLabel="DemoKakapo.java" index="7">
-<position info="not_deleted" x="249" y="1"/>
-</item>
-<item historyLabel="AudioSS.java" index="6">
-<position info="not_deleted" x="0" y="14667"/>
-</item>
-<item historyLabel="AudioSS.java" index="8">
-<position info="not_deleted" x="14667" y="0"/>
-</item>
-<item historyLabel="DemoKakapo.java" index="7">
-<position info="not_deleted" x="249" y="1"/>
-</item>
-<item historyLabel="OpenCommKakapo Manifest" index="9"/>
-<item historyLabel="OpenCommSS Manifest" index="5"/>
-<item historyLabel="OpenCommKakapo Manifest" index="9"/>
-<item historyLabel="OpenCommKakapo Manifest" index="10"/>
-<item historyLabel="DemoKakapo.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="OpenCommKakapo Manifest" index="10"/>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="OpenCommKakapo Manifest" index="2"/>
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1918" y="8"/>
 </item>
-<item historyLabel="R.java" index="12">
+<item historyLabel="R.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1918" y="8"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1675" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1671" y="0"/>
 </item>
-<item historyLabel="demomulti.xml" index="13"/>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="demomulti.xml" index="5"/>
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1671" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1683" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="996" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="996" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="996" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="4678" y="0"/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="996" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1682" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1699" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1715" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1751" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1788" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1823" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1840" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="3476" y="0"/>
 </item>
-<item historyLabel="demomulti.xml" index="15"/>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="demomulti.xml" index="7"/>
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="3326" y="0"/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="996" y="0"/>
 </item>
-<item historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1842" y="0"/>
 </item>
-<item historyLabel="AudioSS.java" index="14">
+<item historyLabel="AudioSS.java" index="6">
 <position info="not_deleted" x="14328" y="0"/>
 </item>
-<item active="true" historyLabel="DemoKakapo.java" index="11">
+<item historyLabel="DemoKakapo.java" index="3">
 <position info="not_deleted" x="1842" y="0"/>
+</item>
+<item historyLabel="AudioSS.java" index="8">
+<position info="not_deleted" x="14328" y="0"/>
+</item>
+<item historyLabel="DemoKakapo.java" index="3">
+<position info="not_deleted" x="3773" y="0"/>
+</item>
+<item historyLabel="demomulti.xml" index="9"/>
+<item historyLabel="AudioSS.java" index="8">
+<position info="not_deleted" x="14860" y="0"/>
+</item>
+<item historyLabel="AudioSS.java" index="8">
+<position info="not_deleted" x="14884" y="0"/>
+</item>
+<item historyLabel="DemoKakapo.java" index="3">
+<position info="not_deleted" x="3773" y="0"/>
+</item>
+<item historyLabel="AudioSS.java" index="8">
+<position info="not_deleted" x="14884" y="0"/>
+</item>
+<item historyLabel="AudioSS.java" index="8">
+<position info="not_deleted" x="1288" y="0"/>
+</item>
+<item historyLabel="DemoKakapo.java" index="3">
+<position info="not_deleted" x="1597" y="3"/>
+</item>
+<item historyLabel="AudioSS.java" index="10">
+<position info="not_deleted" x="1288" y="0"/>
+</item>
+<item historyLabel="DemoKakapo.java" index="3">
+<position info="not_deleted" x="6366" y="0"/>
+</item>
+<item active="true" historyLabel="AudioSS.java" index="10">
+<position info="not_deleted" x="1288" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -537,14 +531,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@c8f0a4"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -552,7 +538,6 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1c25a1d"/>
 </trimArea>
 </trimLayout>
 </window>

@@ -17,7 +17,7 @@ public class AudioSS {
 	private boolean[] pspace; // whether this user is in the specific pspace
 	private static final String TAG = "AudioSS";
 	private static final int NoPSPACE = 4; // number of private spaces
-	private static final int BUFFER_SIZE = 1484; // minimum buffer size for a stereo, 8000kHz, 16-bit sound
+	private static final int BUFFER_SIZE = 1484 * 2; // minimum buffer size for a stereo, 8000kHz, 16-bit sound = 1484
 	
 	/** = buffer size */
 	public static int getBufferSize() {
