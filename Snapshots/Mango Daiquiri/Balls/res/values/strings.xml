@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main</string>
+    <string name="app_name">Balls</string>
+  	<string name="mode_ready">Balls\nPress Up To Play</string>
+  	<string name="mode_pause">Paused\nPress Up To Resume</string>
+  	<string name="mode_lose_prefix">Game Over\nScore: </string>
+  	<string name="mode_lose_suffix">\nPress Up To Play</string>
+    <string name="colormind_layout_text_text"></string>
+
+</resources>
