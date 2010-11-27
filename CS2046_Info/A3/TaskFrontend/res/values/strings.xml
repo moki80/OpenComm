@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Name of the application -->
+    <string name="app_name">Tasks</string>
+    
+    <!-- Text to display when no tasks exist. -->
+    <string name="no_tasks">No tasks. Press Menu to add a new one.</string>
+    
+    <!-- Labels for the fields in the Edit Note Activty -->
+    <string name="edit_title">Title:</string>
+    <string name="edit_completed">Completed:</string>
+    <string name="edit_details">Details:</string>
+    
+    <!-- Labels for modifying tasks -->
+    <string name="save_task">Save</string>
+    <string name="delete_task">Delete</string>
+    <string name="mark_complete_task">Mark Complete</string>
+    <string name="modify_task">Modify...</string>
+    <string name="add_task">Add</string>
+    <string name="edit_task">Edit Task</string>
+    
+    <string name="delete_old">Delete Old</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+</resources>

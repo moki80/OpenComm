@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="cornell.cs2046.taskbackup"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+		<service android:name=".TaskBackupService">
+			<intent-filter>
+				<action android:name="cornell.cs2046.taskbackup.ACTION_BACKUP_TASKS" />
+				<action android:name="cornell.cs2046.taskbackup.ACTION_RESTORE_TASKS" />
+			</intent-filter>
+		</service>
+		<receiver android:name=".TaskBackupReceiver">
+			<intent-filter>
+				<action android:name="cornell.cs2046.taskbackup.BROADCAST_PERIODIC_BACKUP" />
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest> 
