@@ -1,9 +1,9 @@
-#Thu Nov 04 15:38:10 EDT 2010
-com.android.ide.eclipse.ddms.logcat.time=127
+#Fri Dec 17 17:59:32 EST 2010
+com.android.ide.eclipse.ddms.logcat.time=170
 com.android.ide.eclipse.ddms.logcat.pid=47
 eclipse.preferences.version=1
 com.android.ide.eclipse.ddms.adb=C\:\\Documents and Settings\\Risa\\My Documents\\Research\\android\\android-sdk-windows\\tools\\adb.exe
-com.android.ide.eclipse.ddms.logcat.message=700
-com.android.ide.eclipse.ddms.logcat.filters=DemoKakapo\:2\:DemoKakapo|
+com.android.ide.eclipse.ddms.logcat.message=761
+com.android.ide.eclipse.ddms.logcat.filters=SingleUserDemo\:2\:SingleUserDemo|MultiUserDemo\:2\:MultiUserDemo|AudioSS\:2\:AudioSS|AudioSS_Stereo\:2\:AudioSS_Stereo|ConfigSS\:2\:ConfigSS|AudioThread\:2\:AudioThread|
 com.android.ide.eclipse.ddms.logcat.level=23
-com.android.ide.eclipse.ddms.logcat.tag=138
+com.android.ide.eclipse.ddms.logcat.tag=139
